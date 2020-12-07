@@ -1,0 +1,22 @@
+server:
+  port: 9526
+spring:
+  application:
+    name: springcloud-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: zuul9526.com
+    prefer-ip-address: true
+
+info:
+  app.name: springcloud
+  company.name: blog.kuangstudy.com
+zuul:
+  routes:
+    mydept.serviceId: SPRING-CLOUD-PROVIDER-DEPT
+    mydept.path: /mydept/**
+  ignored-services: “*”  # 不能再使用某个(*：全部)路径访问了，ignored ： 忽略,隐藏全部的~
+  prefix: /lxk #设置公共前缀
