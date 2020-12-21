@@ -1,0 +1,27 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: service-product
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///shop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 123456
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+dubbo:
+  scan:
+    base-packages: org.example.service.impl # 开启包扫描
+  protocols:
+    dubbo:
+      name: dubbo # 服务协议
+      port: -1 # 服务端口
+  registry:
+    address: spring-cloud://39.99.228.233 # 注册中心

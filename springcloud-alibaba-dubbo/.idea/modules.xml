@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/shop-common/shop-common.iml" filepath="$PROJECT_DIR$/shop-common/shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-order/shop-order.iml" filepath="$PROJECT_DIR$/shop-order/shop-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-product/shop-product.iml" filepath="$PROJECT_DIR$/shop-product/shop-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springcloud-alibaba-dubbo.iml" filepath="$PROJECT_DIR$/.idea/springcloud-alibaba-dubbo.iml" />
+    </modules>
+  </component>
+</project>
